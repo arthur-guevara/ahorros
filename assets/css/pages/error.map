@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "error.css",
+	"sources": [
+		"../../../../src/assets/scss/pages/error.scss"
+	],
+	"sourcesContent": [
+		"#error {\n    height: 100vh;\n    background-color: #ebf3ff;\n    padding-top: 5rem;\n    .img-error {\n        width: 100%;\n    }\n    .error-title {\n        font-size: 4rem;\n        margin-top: 3rem;\n    }\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,OAAO;EACzB,WAAW,EAAE,IAAI;CAQpB;;;AAXD,AAII,MAJE,CAIF,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;CACd;;;AANL,AAOI,MAPE,CAOF,YAAY,CAAC;EACT,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACnB"
+}

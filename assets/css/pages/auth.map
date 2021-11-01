@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "auth.css",
+	"sources": [
+		"../../../../src/assets/scss/pages/auth.scss"
+	],
+	"sourcesContent": [
+		"body {\n    background-color: white;\n}\n#auth {\n    height: 100vh;\n    overflow-x: hidden;\n    \n    #auth-right {\n        height: 100%;\n        background:  url(../../images/bg/4853433.jpg),linear-gradient(90deg,#2d499d,#3f5491);\n    }\n    #auth-left {\n        padding: 5rem 8rem;\n        \n        .auth-title {\n            font-size: 4rem;\n            margin-bottom: 1rem;\n        }\n        .auth-subtitle {\n            font-size: 1.7rem;\n            line-height: 2.5rem;\n            color: #a8aebb;\n        }\n        .auth-logo {\n            margin-bottom: 7rem;\n            img {\n                height: 2rem;\n            }\n        }\n        @media screen and (max-width: 767px) {\n            padding: 5rem ;\n        }\n    }\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,KAAK;CAC1B;;;AACD,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,MAAM;CA4BrB;;;AA9BD,AAII,KAJC,CAID,WAAW,CAAC;EACR,MAAM,EAAE,IAAI;EACZ,UAAU,EAAG,gCAAgC,EAAC,wCAAsC;CACvF;;;AAPL,AAQI,KARC,CAQD,UAAU,CAAC;EACP,OAAO,EAAE,SAAS;CAoBrB;;;AA7BL,AAWQ,KAXH,CAQD,UAAU,CAGN,WAAW,CAAC;EACR,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACtB;;;AAdT,AAeQ,KAfH,CAQD,UAAU,CAON,cAAc,CAAC;EACX,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,OAAO;CACjB;;;AAnBT,AAoBQ,KApBH,CAQD,UAAU,CAYN,UAAU,CAAC;EACP,aAAa,EAAE,IAAI;CAItB;;;AAzBT,AAsBY,KAtBP,CAQD,UAAU,CAYN,UAAU,CAEN,GAAG,CAAC;EACA,MAAM,EAAE,IAAI;CACf;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EA1B3C,AAQI,KARC,CAQD,UAAU,CAAC;IAmBH,OAAO,EAAE,IAAK;GAErB"
+}

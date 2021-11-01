@@ -1,0 +1,53 @@
+/* line 1, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+body {
+  background-color: white;
+}
+
+/* line 4, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* line 8, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-right {
+  height: 100%;
+  background: url(../../images/bg/4853433.jpg), linear-gradient(90deg, #005841, #006041);
+}
+
+/* line 12, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-left {
+  padding: 5rem 8rem;
+}
+
+/* line 15, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-left .auth-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* line 19, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-left .auth-subtitle {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: #a8aebb;
+}
+
+/* line 24, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-left .auth-logo {
+  margin-bottom: 7rem;
+}
+
+/* line 26, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+#auth #auth-left .auth-logo img {
+  height: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/auth.scss */
+  #auth #auth-left {
+    padding: 5rem;
+  }
+}
+
+/*# sourceMappingURL=auth.css.map */

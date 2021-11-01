@@ -1,0 +1,64 @@
+/* line 1, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+#main {
+  margin-left: 300px;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 1, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* line 7, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+#main.layout-navbar {
+  padding: 0;
+}
+
+/* line 10, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+#main.layout-horizontal {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+#main #main-content {
+  padding: 2rem;
+}
+
+/* line 18, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+.page-heading {
+  margin: 0 0 2rem;
+}
+
+/* line 20, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+.page-heading h3 {
+  font-weight: bold;
+}
+
+/* line 24, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+.page-title-headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+/* line 29, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+.page-title-headings h3 {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
+/* line 33, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+.page-title-headings .breadcrumb {
+  margin-bottom: 0;
+}
+
+/* line 37, ../../../../xampp/htdocs/plantilla/src/assets/scss/layouts/main.scss */
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

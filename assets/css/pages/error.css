@@ -1,0 +1,19 @@
+/* line 1, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/error.scss */
+#error {
+  height: 100vh;
+  background-color: #ebf3ff;
+  padding-top: 5rem;
+}
+
+/* line 5, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/error.scss */
+#error .img-error {
+  width: 100%;
+}
+
+/* line 8, ../../../../xampp/htdocs/plantilla/src/assets/scss/pages/error.scss */
+#error .error-title {
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+/*# sourceMappingURL=error.css.map */

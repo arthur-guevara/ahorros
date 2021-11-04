@@ -53,21 +53,22 @@ include 'header.php';
                                     </div>
                                     <div class="row">
                                         <div class="col-4">
-                                        </div>
-                                        <div class="col-4">
                                             <button class="btn btn-outline-primary rounded-pill" onclick="generateNumber();">Generar</button>
                                         </div>
                                         <div class="col-4">
-                                            <button class="btn btn-outline-success rounded-pill" onclick="addMoney();" id="btn-add" hidden>Guardar!</button>
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-success rounded-pill" onclick="saveMoney();" id="btn-save">Guardar!</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
             </div>
+            </section>
         </div>
+    </div>
     </div>
 
     <!-- Inicio de scripts -->
@@ -76,5 +77,20 @@ include 'header.php';
     <script src="assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/js/genera.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/datepicker.es-ES.js"></script>
+
+    <script>
+        function insertOtherDay() {
+            $('#modal-calendar').modal('show');
+            $('#date').datepicker({
+                language: 'es-ES',
+                endDate: '02/11/2021',
+                autoHide: true,
+            });
+            console.log($('#date').datepicker('getDate', true));
+            $('#date').datepicker('reset')
+        }
+    </script>
     <!-- Fin scripts -->
 </body>

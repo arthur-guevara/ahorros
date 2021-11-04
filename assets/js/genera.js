@@ -1,27 +1,60 @@
 function generateNumber() {
-    let number = Math.floor((Math.random() * (94 - 0 + 1)) + 0);
-    console.log(number);
-    $('#result').text(number);
-    $('#btn-add').show();
-   
-
-}
-function addMoney() {
-     Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
-            )
+    $.ajax({
+        url: 'actions/generate.php',
+        type: 'POST',
+        success: function (response) {
+            localStorage.setItem('number', response);
+            $('#result').text(localStorage.getItem('number'));
+            console.log(response);
         }
     });
+    
+    $('#btn-save').prop('disabled', false);
+    $('#btn-last').prop('disabled', false);
 }
+
+
+function saveMoney() {
+    if (localStorage.getItem('number')) {
+        let number = localStorage.getItem('number')
+        Swal.fire({
+            title: 'Serán $' + (number * 2) + ' a guadar',
+            text: "¿Estas segure?",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Aceptar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: 'actions/save-money.php',
+                    type: 'POST',
+                    data: { 'number': number },
+                    success: function (response) {
+                        console.log(response);
+                        alertsSwalSimple(response, "", 'success');
+                    }
+                });
+            }
+        });
+    } else {
+        alertsSwalSimple('No se encontro cantidad!', 'Intenta generar un nuevo numero', 'error');
+    }
+  
+}
+
+function alertsSwalSimple(title, text, icon) {
+    Swal.fire({
+        title: title,
+        text: text,
+        icon: icon,
+        confirmButtonColor: '#435EBE'
+    });
+}
+
+(function () {
+    $('#btn-save').prop('disabled', true);
+    $('#btn-last').prop('disabled', true);
+}())

@@ -68,7 +68,7 @@ if (!$query->num_rows > 0) {
                                                 <table class="table table-striped mb-0" id="data">
                                                     <thead>
                                                         <tr>
-                                                            <th>Numero</th>
+                                                            <th>Num</th>
                                                             <th>Cantidad</th>
                                                             <th>Fecha</th>
 

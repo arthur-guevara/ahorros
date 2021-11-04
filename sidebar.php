@@ -32,12 +32,16 @@
 </div>
 <script>
     var URLactual = window.location.toString();
+
     urlSplit = URLactual.split('/');
     switch (urlSplit[4]) {
         case 'total-ahorros.php':
             $('#opc-total').addClass('active');
             break;
         case 'index.php':
+            $('#opc-generar').addClass('active');
+            break;
+        case '':
             $('#opc-generar').addClass('active');
             break;
     }
